@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App2 from "./App2.test";
+import NotificationList from "./mounts/NotificationList";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        {/*  jsx 문법에서 화면을 랜더링 하기 위한 태그의 이름은 반드시 첫 글자가 대문자이어야 함*/}
+        {/* 대문자*/}
+        <App2/>
+        <NotificationList/>
+        <br/><hr/><br/>
+        <App/>
+    </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
